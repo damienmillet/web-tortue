@@ -34,7 +34,7 @@ date_default_timezone_set("Europe/Paris");
                         dans le tableau $books -->
                         <?php foreach ($books as $key => $book) : ?>
                             <!-- J'intègre les liens vers les pages dédiées en récupérant l'identifiant du livre comment paramètre GET-->
-                            <a href="/livre.php?id=<?php echo $key; ?>">
+                            <a href="/livre.php?title=<?php echo $key; ?>">
                                 <div class="book">
                                     <!-- Gestion de l'affichage de l'image du livre, le nom de fichier est basé sur la clé du tableau -->
                                     <img src="/images/<?php echo $key; ?>.jpg" alt="<?php echo $book['titre']; ?>">
