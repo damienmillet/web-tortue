@@ -27,7 +27,6 @@
                         if (isset($_GET['id'])) {
                             $id = $_GET['id'];
                             // J'inclus le fichier correspondant au livre depuis le dossier livres/
-                            var_dump(dirname(__DIR__),$id);
                             include dirname(__DIR__)."/livres/$id.php";
                         } else {
                             echo "Aucun livre selectionné";
