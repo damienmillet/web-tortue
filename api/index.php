@@ -1,5 +1,5 @@
 <?php 
-echo dirname();
+echo dirname(__DIR__);
 include dirname(__DIR__).'/books.php';
 ?>
 <!DOCTYPE html>
