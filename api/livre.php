@@ -16,7 +16,8 @@
                     <div class="header">
                         <a href="/index.php">⌂ Home</a>
                         <div class="date">
-                            10h25
+                            <!-- 10h25 -->
+                            <?= date("h") . "h" . date("i") ?>
                         </div>
                     </div>
                     <div class="book-content">

@@ -21,7 +21,8 @@ include dirname(__DIR__).'/books.php';
                     <div class="header">
                         <a href="/index.php">⌂ Home</a>
                         <div class="date">
-                            10h25
+                        <?= date("h") . "h" . date("i") ?>
+                            <!-- 10h25 -->
                         </div>
                     </div>
                     <h2> Ma liste de livres </h2>
