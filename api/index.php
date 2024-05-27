@@ -1,5 +1,7 @@
 <?php 
-echo dirname('books.php') ?>
+echo dirname();
+include dirname(__DIR__).'/books.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
