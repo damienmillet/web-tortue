@@ -18,8 +18,8 @@
       "dest": "/public/images/$1"
     },
     {
-      "src": "/livre.php(.*)",
-      "dest": "/api/livre.php$1"
+      "src": "/livre.php?(.*)",
+      "dest": "/api/livre.php?$1"
     },
     {
       "src": "/(.*)",
