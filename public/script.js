@@ -19,5 +19,4 @@ setInterval(() => {
     console.log(dateContainer)
     dateContainer.innerHTML = `${hours}h${minutes}`;
     console.log('update date')
-}, 500);
-// 60000
+}, 60000);
