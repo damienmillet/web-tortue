@@ -1,4 +1,4 @@
-<?php include '../books.php' ?>
+<?php include 'books.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 

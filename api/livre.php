@@ -25,7 +25,7 @@
                         if (isset($_GET['id'])) {
                             $id = $_GET['id'];
                             // J'inclus le fichier correspondant au livre depuis le dossier livres/
-                            include "../livres/$id.php";
+                            include "livres/$id.php";
                         } else {
                             echo "Aucun livre selectionné";
                         }
