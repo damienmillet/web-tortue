@@ -1,4 +1,5 @@
-<?php include 'books.php' ?>
+<?php 
+echo dirname('books.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
