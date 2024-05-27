@@ -45,7 +45,7 @@ date_default_timezone_set("Europe/Paris");
 
                     <div class="list-content hidden" id="listContainer">
                         <?php foreach ($books as $key => $book) : ?>
-                            <a href="/livre.php?id=<?php echo $key; ?>">
+                            <a href="/livre.php?title=<?php echo $key; ?>">
                                 <div class="books-detail">
                                     <h4><?php echo $book['titre'] ?></h4>
                                     <p><?php echo $book['auteur'] ?></p>
