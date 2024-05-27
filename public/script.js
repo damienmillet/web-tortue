@@ -9,12 +9,3 @@ document.addEventListener('DOMContentLoaded', function () {
         listContainer.classList.toggle('hidden');
     })
 })
-
-// update date format with Hhm every 60 seconds
-setInterval(() => {
-    const date = new Date();
-    const hours = date.getHours().toLocaleString('fr-FR', { minimumIntegerDigits: 2, useGrouping: false });
-    const minutes = date.getMinutes().toLocaleString('fr-FR', { minimumIntegerDigits: 2, useGrouping: false });
-    const dateContainer = document.getElementsByClassName('date')[0];
-    dateContainer.innerHTML = `${hours}h${minutes}`;
-}, 60000);
