@@ -1,5 +1,6 @@
 <?php 
 include dirname(__DIR__).'/books.php';
+date_default_timezone_set("Europe/Paris");
 ?>
 <!DOCTYPE html>
 <html lang="en">
