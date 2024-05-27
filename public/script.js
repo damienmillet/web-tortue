@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 setInterval(() => {
     const date = new Date();
     const hours = date.getHours().toLocaleString('fr-FR', { minimumIntegerDigits: 2, useGrouping: false });
-    const minutes = date.getMinutes();
-    const dateContainer = document.getElementsByClassName('date');
-    console.log(dateContainer)
+    const minutes = date.getMinutes().toLocaleString('fr-FR', { minimumIntegerDigits: 2, useGrouping: false });
+    const dateContainer = document.getElementsByClassName('date')[0];
     dateContainer.innerHTML = `${hours}h${minutes}`;
-    console.log('update date')
 }, 60000);
