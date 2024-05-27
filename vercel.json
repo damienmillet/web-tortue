@@ -6,8 +6,28 @@
   },
   "routes": [
     {
+      "src": "/script.js",
+      "dest": "/api/script.js"
+    },
+    {
+      "src": "/style.css",
+      "dest": "/api/style.css"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/api/images/$1"
+    },
+    {
+      "src": "/resultat/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/livre(.*)",
+      "dest": "/api/livre.php$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/api/index.php"
+      "dest": "/api/index.php$1"
     }
   ]
 }
