@@ -7,19 +7,15 @@
   "routes": [
     {
       "src": "/script.js",
-      "dest": "/api/script.js"
+      "dest": "/public/script.js"
     },
     {
       "src": "/style.css",
-      "dest": "/api/style.css"
+      "dest": "/public/style.css"
     },
     {
       "src": "/images/(.*)",
-      "dest": "/api/images/$1"
-    },
-    {
-      "src": "/resultat/(.*)",
-      "dest": "/api/$1"
+      "dest": "/public/images/$1"
     },
     {
       "src": "/livre(.*)",
@@ -27,6 +23,10 @@
     },
     {
       "src": "/(.*)",
+      "dest": "/api/index.php$1"
+    },
+    {
+      "src": "/index.php(.*)",
       "dest": "/api/index.php$1"
     }
   ]
