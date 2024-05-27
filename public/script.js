@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // update date format with Hhm every 60 seconds
 setInterval(() => {
+    const date = new Date();
     const hours = date("H");
     const minutes = date("i");
     const dateContainer = document.getElementsByClassName('date');
