@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kindle</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <div class="screen">
                 <div class="screen-content">
                     <div class="header">
-                        <a href="index.php">⌂ Home</a>
+                        <a href="/index.php">⌂ Home</a>
                         <div class="date">
                             10h25
                         </div>
@@ -30,10 +30,10 @@
                         dans le tableau $books -->
                         <?php foreach ($books as $key => $book) : ?>
                             <!-- J'intègre les liens vers les pages dédiées en récupérant l'identifiant du livre comment paramètre GET-->
-                            <a href="livre.php?id=<?php echo $key; ?>">
+                            <a href="/livre.php?id=<?php echo $key; ?>">
                                 <div class="book">
                                     <!-- Gestion de l'affichage de l'image du livre, le nom de fichier est basé sur la clé du tableau -->
-                                    <img src="images/<?php echo $key; ?>.jpg" alt="<?php echo $book['titre']; ?>">
+                                    <img src="/images/<?php echo $key; ?>.jpg" alt="<?php echo $book['titre']; ?>">
                                 </div>
                             </a>
                         <?php endforeach ?>
@@ -41,7 +41,7 @@
 
                     <div class="list-content hidden" id="listContainer">
                         <?php foreach ($books as $key => $book) : ?>
-                            <a href="livre.php?id=<?php echo $key; ?>">
+                            <a href="/livre.php?id=<?php echo $key; ?>">
                                 <div class="books-detail">
                                     <h4><?php echo $book['titre'] ?></h4>
                                     <p><?php echo $book['auteur'] ?></p>
