@@ -17,4 +17,5 @@ setInterval(() => {
     const minutes = date.getMinutes();
     const dateContainer = document.getElementsByClassName('date');
     dateContainer.innerHTML = `${hours}h${minutes}`;
+    console.log('update date')
 }, 60000);
