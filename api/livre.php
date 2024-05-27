@@ -18,7 +18,7 @@
                         <a href="/index.php">⌂ Home</a>
                         <div class="date">
                             <!-- 10h25 -->
-                            <?= date("h") . "h" . date("i") ?>
+                            <?= date("%H") . "h" . date("%M") ?>
                         </div>
                     </div>
                     <div class="book-content">

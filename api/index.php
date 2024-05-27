@@ -22,7 +22,7 @@ date_default_timezone_set("Europe/Paris");
                     <div class="header">
                         <a href="/index.php">⌂ Home</a>
                         <div class="date">
-                        <?= date("h") . "h" . date("i") ?>
+                        <?= date("%H") . "h" . date("%M") ?>
                             <!-- 10h25 -->
                         </div>
                     </div>
